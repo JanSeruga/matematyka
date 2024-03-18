@@ -1,0 +1,176 @@
+body
+{
+    background-image: url(tlo.jpg);
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#gora
+{
+    color: white;
+    text-align: center;
+    text-shadow: -2px 4px 9px rgba(0, 0, 0, 1);
+}
+
+#glowna
+{
+    height: 400px;
+    width: 1200px;
+    background-color: gray;
+    -webkit-box-shadow: 0px 8px 60px 8px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 8px 60px 8px rgba(0, 0, 0, 1);
+    box-shadow: 0px 8px 60px 8px rgba(0, 0, 0, 1);
+    border-radius: 25px;
+    float: left;
+    margin-bottom: 60px;
+    margin-left: 10%;
+}
+
+#stopka
+{
+    height: 55px;
+    background-color: gray;
+    clear: both;
+    text-align: center;
+    text-shadow: -2px 4px 9px rgba(0, 0, 0, 1);
+    font-weight: bold;
+    padding-top: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 8px 60px 8px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 8px 60px 8px rgba(0, 0, 0, 1);
+    box-shadow: 0px 8px 60px 8px rgba(0, 0, 0, 1);
+}
+
+#timer
+{
+    text-align: center;
+    font-size: 25px;
+}
+
+#powrot
+{
+    height: 50px;
+    width: 200px;
+    background-color: gray;
+    float: left;
+    -webkit-box-shadow: 0px 8px 60px 8px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 8px 60px 8px rgba(0, 0, 0, 1);
+    box-shadow: 0px 8px 60px 8px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 35px;
+    text-align: center;
+    text-shadow: -2px 4px 9px rgba(0, 0, 0, 1);
+    font-weight: bold;
+    margin-left: 43%;
+}
+
+#powrot:hover
+{
+    background-color: black;
+    height: 50px;
+    width: 200px;
+    float: left;
+    color: white;
+    text-shadow: -2px 4px 9px black;
+    text-align: center;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 8px 60px 8px white;
+    -moz-box-shadow: 0px 8px 60px 8px white;
+    box-shadow: 0px 8px 60px 8px white;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+
+#losuj
+{
+    height: 50px;
+    width: 200px;
+    background-color: gray;
+    float: left;
+    -webkit-box-shadow: 0px 8px 60px 8px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 8px 60px 8px rgba(0, 0, 0, 1);
+    box-shadow: 0px 8px 60px 8px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    text-shadow: -2px 4px 9px rgba(0, 0, 0, 1);
+    font-weight: bold;
+    margin-left: 10%;
+    font-size: 20px;
+    margin-top: 5%;
+}
+
+#sprawdz
+{
+    height: 50px;
+    width: 200px;
+    background-color: gray;
+    float: left;
+    -webkit-box-shadow: 0px 8px 60px 8px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 8px 60px 8px rgba(0, 0, 0, 1);
+    box-shadow: 0px 8px 60px 8px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    text-shadow: -2px 4px 9px rgba(0, 0, 0, 1);
+    font-weight: bold;
+    margin-left: 42%;
+    font-size: 20px;
+    margin-top: 5%;
+}
+
+#losuj:hover
+{
+    height: 50px;
+    width: 200px;
+    background-color: black;
+    float: left;
+    -webkit-box-shadow: 0px 8px 60px 8px white;
+    -moz-box-shadow: 0px 8px 60px 8px white;
+    box-shadow: 0px 8px 60px 8px white;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    text-shadow: -2px 4px 9px rgba(0, 0, 0, 1);
+    font-weight: bold;
+    margin-left: 10%;
+    font-size: 20px;
+    transition-duration: 0.4s;
+}
+
+#sprawdz:hover
+{
+    height: 50px;
+    width: 200px;
+    background-color: black;
+    float: left;
+    -webkit-box-shadow: 0px 8px 60px 8px white;
+    -moz-box-shadow: 0px 8px 60px 8px white;
+    box-shadow: 0px 8px 60px 8px white;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    text-shadow: -2px 4px 9px rgba(0, 0, 0, 1);
+    font-weight: bold;
+    margin-left: 42%;
+    font-size: 20px;
+    margin-top: 5%;
+    transition-duration: 0.4s;
+}
+#s
+{
+    float: left;
+    margin-left: 10%;
+    text-shadow: -2px 4px 9px rgba(0, 0, 0, 1);
+}
+#e
+{
+    float: left;
+    margin-left: 43%;
+    margin-top: 5%;
+    text-shadow: -2px 4px 9px rgba(0, 0, 0, 1);
+    font-weight: bold;
+    font-size: 25px;
+}

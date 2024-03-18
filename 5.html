@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadania matematyczne</title>
+    <script src="main.js"></script>
+    <style>
+        body
+        {
+            background-image: url(tlo.jpg);
+            color: white;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        #gora
+        {
+            color: white;
+            text-align: center;
+            text-shadow: -2px 4px 9px rgba(0, 0, 0, 1);
+        }
+
+        #glowna
+        {
+            height: 800px;
+            width: 600px;
+            background-color: gray;
+            -webkit-box-shadow: 0px 8px 60px 8px rgba(0, 0, 0, 1);
+            -moz-box-shadow: 0px 8px 60px 8px rgba(0, 0, 0, 1);
+            box-shadow: 0px 8px 60px 8px rgba(0, 0, 0, 1);
+            border-radius: 25px;
+            float: left;
+            margin-bottom: 60px;
+            margin-left: 30%;
+        }
+
+        #stopka
+        {
+            height: 55px;
+            background-color: gray;
+            clear: both;
+            text-align: center;
+            text-shadow: -2px 4px 9px rgba(0, 0, 0, 1);
+            font-weight: bold;
+            padding-top: 20px;
+            border-radius: 10px;
+            -webkit-box-shadow: 0px 8px 60px 8px rgba(0, 0, 0, 1);
+            -moz-box-shadow: 0px 8px 60px 8px rgba(0, 0, 0, 1);
+            box-shadow: 0px 8px 60px 8px rgba(0, 0, 0, 1);
+            margin: 0;
+        }
+
+        #timer
+        {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        #powrot
+        {
+            height: 50px;
+            width: 200px;
+            background-color: gray;
+            float: left;
+            -webkit-box-shadow: 0px 8px 60px 8px rgba(0, 0, 0, 1);
+            -moz-box-shadow: 0px 8px 60px 8px rgba(0, 0, 0, 1);
+            box-shadow: 0px 8px 60px 8px rgba(0, 0, 0, 1);
+            border-radius: 10px;
+            color: white;
+            margin-bottom: 35px;
+            text-align: center;
+            text-shadow: -2px 4px 9px rgba(0, 0, 0, 1);
+            font-weight: bold;
+            margin-left: 33%;
+            margin-top: 5%;
+        }
+
+        #powrot:hover
+        {
+            background-color: black;
+            height: 50px;
+            width: 200px;
+            float: left;
+            color: white;
+            text-shadow: -2px 4px 9px black;
+            text-align: center;
+            font-weight: bold;
+            -webkit-box-shadow: 0px 8px 60px 8px white;
+            -moz-box-shadow: 0px 8px 60px 8px white;
+            box-shadow: 0px 8px 60px 8px white;
+            border-radius: 10px;
+            transition-duration: 0.4s;
+        }
+
+        #losuj
+        {
+            height: 50px;
+            width: 200px;
+            background-color: gray;
+            float: left;
+            -webkit-box-shadow: 0px 8px 60px 8px rgba(0, 0, 0, 1);
+            -moz-box-shadow: 0px 8px 60px 8px rgba(0, 0, 0, 1);
+            box-shadow: 0px 8px 60px 8px rgba(0, 0, 0, 1);
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            text-shadow: -2px 4px 9px rgba(0, 0, 0, 1);
+            font-weight: bold;
+            margin-left:33%;
+            font-size: 20px;
+            margin-top: 10%;
+        }
+
+        #sprawdz
+        {
+            height: 50px;
+            width: 200px;
+            background-color: gray;
+            float: left;
+            -webkit-box-shadow: 0px 8px 60px 8px rgba(0, 0, 0, 1);
+            -moz-box-shadow: 0px 8px 60px 8px rgba(0, 0, 0, 1);
+            box-shadow: 0px 8px 60px 8px rgba(0, 0, 0, 1);
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            text-shadow: -2px 4px 9px rgba(0, 0, 0, 1);
+            font-weight: bold;
+            margin-left: 33%;
+            font-size: 20px;
+        }
+
+        #losuj:hover
+        {
+            height: 50px;
+            width: 200px;
+            background-color: black;
+            float: left;
+            -webkit-box-shadow: 0px 8px 60px 8px white;
+            -moz-box-shadow: 0px 8px 60px 8px white;
+            box-shadow: 0px 8px 60px 8px white;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            text-shadow: -2px 4px 9px rgba(0, 0, 0, 1);
+            font-weight: bold;
+            font-size: 20px;
+            transition-duration: 0.4s;
+        }
+
+        #sprawdz:hover
+        {
+            height: 50px;
+            width: 200px;
+            background-color: black;
+            float: left;
+            -webkit-box-shadow: 0px 8px 60px 8px white;
+            -moz-box-shadow: 0px 8px 60px 8px white;
+            box-shadow: 0px 8px 60px 8px white;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            text-shadow: -2px 4px 9px rgba(0, 0, 0, 1);
+            font-weight: bold;
+            font-size: 20px;
+            transition-duration: 0.4s;
+        }
+        #s
+        {
+            float: left;
+            margin-left: 30%;
+            text-shadow: -2px 4px 9px rgba(0, 0, 0, 1);
+            padding: 40px;
+        }
+        #e
+        {
+            float: left;
+            margin-left: 30%;
+            margin-top: 5%;
+            text-shadow: -2px 4px 9px rgba(0, 0, 0, 1);
+            font-weight: bold;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body onload="liczenie();">
+    <div id="gora">
+        <h1>DODAWANIE DO 100</h1>
+    </div>
+    <div id="glowna">
+        
+    <div id="zadanie">
+        <button onclick="losuj()" id="losuj">Losuj</button>
+        <br>
+        <div id="s">
+            <div id="kostka1"></div>
+            <div id="kostka2"></div>
+            <p>Podaj sume oczek: </p> <input id="suma" type="number" class="wpisz"><br>
+        </div>
+        <button onclick="sprawdz()" id="sprawdz">Sprawdź</button>
+        <p id="e"></p>
+        <script>
+            function losuj() {
+                a = Math.round(Math.random() * 5 + 1);
+                document.getElementById("kostka1").innerHTML = "<img src=kosc_" + a + ".gif>";
+                b = Math.round(Math.random() * 5 + 1);
+                document.getElementById("kostka2").innerHTML = "<img src=kosc_" + b + ".gif>";
+                suma = a + b;
+            }
+            function sprawdz() {
+                c = document.getElementById("suma").value;
+                if (c == suma && c !== "") {
+                    document.getElementById("e").innerHTML = "ŚWIETNIE!";
+                }
+                else if (c !== suma && c !== "") {
+                    document.getElementById("e").innerHTML = "SPRÓBUJ PONOWNIE";
+                }
+                else {
+                    document.getElementById("e").innerHTML = "Nie podałeś wyniku";
+                }
+            }
+        </script>
+    </div>
+
+    <a href="index.html">
+        <div id="powrot">
+        <p>STRONA GŁÓWNA</p>
+        </div>
+    </a>
+    </div>
+
+    <div id="stopka">
+        <div id="timer" class="zegar"></div>
+        STRONĘ WYKONAŁ: JAN SERUGA
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadania matematyczne</title>
+    <link rel="stylesheet" href="zadania.css">
+    <script src="main.js"></script>
+    <script>
+        function losuj()
+        {
+            do
+            {
+            a=Math.floor(Math.random()*11);
+            b=Math.floor(Math.random()*11);
+            }
+            while(a+b>100)
+            {
+                document.getElementById("a").innerHTML=a;
+                document.getElementById("b").innerHTML=b;
+            }
+        }
+
+        function sprawdz()
+        {
+            d=document.getElementById("d").value;
+            if(d==a*b)
+            {
+                document.getElementById("e").innerHTML="ŚWIETNIE!";
+            }
+            else{
+                document.getElementById("e").innerHTML="SPRÓBUJ PONOWNIE";
+            }
+        }
+    </script>
+</head>
+<body onload="liczenie();">
+    <div id="gora">
+        <h1>MNOŻENIE</h1>
+    </div>
+    <div id="glowna">
+        <button onclick="losuj()" id="losuj">Losuj</button><br><br><br><br><br><br>
+    <div id="s">
+        <p id="a"></p>
+        <p>*</p>
+        <p id="b"></p>
+        <p>=</p>
+        <input id="d" type="number"><br>
+    </div>  
+    <button onclick="sprawdz()" id="sprawdz">Sprawdź</button>
+    <p id ="e"></p>
+    </div>
+
+    <a href="index.html">
+        <div id="powrot">
+        <p>STRONA GŁÓWNA</p>
+        </div>
+    </a>
+    <div id="stopka">
+        <div id="timer" class="zegar"></div>
+        STRONĘ WYKONAŁ: JAN SERUGA
+    </div>
+</div>
+</body>
+</html>
